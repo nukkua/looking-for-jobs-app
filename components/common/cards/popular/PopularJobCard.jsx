@@ -7,7 +7,7 @@ import { checkImageURL } from '../../../../utils';
 
 const PopularJobCard = ({ item, selectJob, handleCardPress }) => {
 	return (
-		<TouchableOpacity style={styles.container(selectJob, item)}>
+		<TouchableOpacity style={styles.container(selectJob, item)} onPress={handleCardPress}>
 			<TouchableOpacity style={styles.logoContainer(selectJob, item)}>
 		<Image source={{ uri: checkImageURL(item.employer_logo) ? item.employer_logo : 'https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqz05H.jpg'}} resizeMode="contain" style={styles.logoImage} />
 			</TouchableOpacity>
