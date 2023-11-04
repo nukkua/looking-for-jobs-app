@@ -5,7 +5,8 @@ import { SafeAreaView, ScrollView, View } from 'react-native';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components';
 import { COLORS, icons, images, SIZES } from '../constants';
 
-
+// To do
+// i need to fix the url /job-detais/[id].js
 const Home = () => {
 	const router = useRouter();
 	return (
